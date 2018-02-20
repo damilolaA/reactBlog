@@ -12,6 +12,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "format": "prettier write --print-width=120 --tab-width=2 --single-quote \"./**/* .js\" "
+    "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.js\" "
   }
 }
