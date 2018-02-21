@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Landing = () => {
-  <div className="landing">
+const Landing = () => (
     <div className="blog-masthead">
       <div className="container">
         <nav className="nav blog-nav">
@@ -23,8 +22,7 @@ const Landing = () => {
           </Link>
         </nav>
       </div>
-    </div>
-  </div>;
-};
+  </div>
+);
 
 export default Landing;

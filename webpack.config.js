@@ -3,12 +3,17 @@ const path = require('path');
 module.exports = {
 
 	context: __dirname,
-
+	devtool: 'cheap-eval-source-map',
 	entry: "./js/App.jsx",
 
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: "bundle.js"
+	},
+
+	devServer: {
+		publicPath: '/public/',
+		historyApiFallback: true
 	},
 
 	resolve: {

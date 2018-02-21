@@ -15,7 +15,8 @@
     "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\" ",
     "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
     "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
-    "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch"
+    "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch",
+    "dev": "c:/VMs/reactblog/node_modules/.bin/webpack-dev-server"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
