@@ -1,27 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Nav from './Nav';
 
 const Landing = () => (
-    <div className="blog-masthead">
+  <div className="landing">
+    
+    <Nav />
+
+    <div className="blog-header">
       <div className="container">
-        <nav className="nav blog-nav">
-          <Link className="nav-link active" to="#">
-            Home
-          </Link>
-          <Link className="nav-link" to="#">
-            New features
-          </Link>
-          <Link className="nav-link" to="#">
-            Press
-          </Link>
-          <Link className="nav-link" to="#">
-            New hires
-          </Link>
-          <Link className="nav-link" to="#">
-            About
-          </Link>
-        </nav>
+        <h1 className="blog-title">The Bootstrap Blog</h1>
+        <p className="lead blog-description">An example blog template built with Bootstrap.</p>
       </div>
+    </div>
   </div>
 );
 
