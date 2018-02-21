@@ -1,19 +1,15 @@
-const createElement = React.createElement;
+import React from 'react';
+import { render } from 'react-dom';
 
 const Movie = props => {
-  return createElement('h3', null, props.title, props.color);
+  return <h3 props.title/>
 };
 
 const MyComponent = () => {
-  return createElement(
-    'div',
-    { color: 'green' },
-    createElement(Movie, { title: 'Black Panther ', color:"blue"}),
-    createElement(Movie, { title: 'Billions ', color:"red"}),
-    createElement(Movie, { title: 'Fast & Furious' })
-  );
+
+	return(<Movie {title:"Black Panther"}/>)
 };
 
 let handle = document.getElementById('app');
 
-ReactDOM.render(createElement(MyComponent), handle);
+ReactDOM.render(<MyComponent/>, handle);
