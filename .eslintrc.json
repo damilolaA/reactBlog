@@ -1,5 +1,18 @@
 {
     "extends": [
-    	"airbnb"
-    ]
+    	"airbnb",
+    	"prettier"
+    ],
+
+    "plugins": [
+    	"prettier"
+    ],
+
+    "parserOptions": {
+    	"ecmaVersion": 2016,
+    	"sourceType": "module",
+    	"ecmaFeatures": {
+    		"jsx": true
+    	}
+    }
 }
