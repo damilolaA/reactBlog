@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
@@ -14,7 +15,7 @@
     "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\" ",
     "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
     "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
-    "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch" 
+    "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

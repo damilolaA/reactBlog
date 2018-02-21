@@ -1,13 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { render } from 'react-dom';
+import Landing from './Landing';
 
-const Movie = props => (
-  <div>
-    <h3>{props}</h3>
-  </div>
+
+const App = () => (
+	<BrowserRouter>
+		<div className="app">
+			<Switch> 
+				<Route exact path='/' component={Landing} />
+			</Switch>
+		</div>
+	</BrowserRouter>
 );
-
-const MyComponent = () => <Movie title="Black Panther" />;
 
 const handle = document.getElementById('app');
 
