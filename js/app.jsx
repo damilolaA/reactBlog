@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { render } from 'react-dom';
 import Landing from './Landing';
+import { render } from 'react-dom';
 
 
 const App = () => (
@@ -16,4 +16,4 @@ const App = () => (
 
 const handle = document.getElementById('app');
 
-render(<MyComponent />, handle);
+render(<App />, handle);
