@@ -9,11 +9,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\" ",
-    "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet"
+    "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
+    "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
+    "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch" 
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -955,7 +955,7 @@ var Movie = function Movie(props) {
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h3',
       null,
-      props.title
+      props
     )
   );
 };

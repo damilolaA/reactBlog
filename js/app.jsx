@@ -2,16 +2,13 @@ import React from 'react';
 import { render } from 'react-dom';
 
 const Movie = props => (
-	<div>
- 		<h3>{props.title}</h3>
-  	</div>
+  <div>
+    <h3>{props}</h3>
+  </div>
 );
 
-const MyComponent = () => (
+const MyComponent = () => <Movie title="Black Panther" />;
 
-	<Movie title="Black Panther" />
-);
+const handle = document.getElementById('app');
 
-let handle = document.getElementById('app');
-
-render(<MyComponent/>, handle);
+render(<MyComponent />, handle);
