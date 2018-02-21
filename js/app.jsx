@@ -1,15 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const Movie = props => {
-  return <h3 props.title/>
-};
+const Movie = props => (
+	<div>
+ 		<h3>{props.title}</h3>
+  	</div>
+);
 
-const MyComponent = () => {
+const MyComponent = () => (
 
-	return(<Movie {title:"Black Panther"}/>)
-};
+	return(<Movie title:"Black Panther" />)
+);
 
 let handle = document.getElementById('app');
 
-ReactDOM.render(<MyComponent/>, handle);
+render(<MyComponent/>, handle);
