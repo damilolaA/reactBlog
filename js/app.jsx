@@ -9,7 +9,7 @@ const Movie = props => (
 
 const MyComponent = () => (
 
-	return(<Movie title:"Black Panther" />)
+	<Movie title="Black Panther" />
 );
 
 let handle = document.getElementById('app');
