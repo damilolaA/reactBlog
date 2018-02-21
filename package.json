@@ -9,14 +9,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.js\" ",
-    "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
-    "build": "c:/VMs/reactblog/node_modules/.bin/webpack"
+    "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\" ",
+    "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "eslint": "^4.18.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
