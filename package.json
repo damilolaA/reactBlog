@@ -14,7 +14,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\"",
     "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
-    "build": "c:/VMs/reactblog/node_modules/.bin/webpack",
+    "start": "c:/VMs/reactblog/node_modules/.bin/webpack --optimize-minimize",
     "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch",
     "dev": "c:/VMs/reactblog/node_modules/.bin/webpack-dev-server"
   },
