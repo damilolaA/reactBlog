@@ -4,17 +4,19 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
+    "start": "node server.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier --write --print-width=120 --tab-width=2 --single-quote \"js/**/*.jsx\"",
     "lint": "c:/VMs/reactblog/node_modules/.bin/eslint ./js --ext .jsx --quiet",
-    "start": "c:/VMs/reactblog/node_modules/.bin/webpack -p",
+    "build": "c:/VMs/reactblog/node_modules/.bin/webpack -p",
     "watch": "c:/VMs/reactblog/node_modules/.bin/webpack --watch",
     "dev": "c:/VMs/reactblog/node_modules/.bin/webpack-dev-server"
   },
