@@ -5,8 +5,8 @@ const SideBar = () => (
     <div className="sidebar-module sidebar-module-inset">
       <h4>About</h4>
       <p>
-        Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-        Aenean lacinia bibendum nulla sed consectetur.
+        This blog is committed to posting relevant articles and information relating to programming,
+        web development, and the tech community in Nigeria.
       </p>
     </div>
     <div className="sidebar-module">
@@ -54,13 +54,13 @@ const SideBar = () => (
       <h4>Elsewhere</h4>
       <ol className="list-unstyled">
         <li>
-          <a href="#">GitHub</a>
+          <a href="https://github.com/damilolaA">GitHub</a>
         </li>
         <li>
-          <a href="#">Twitter</a>
+          <a href="https://twitter.com/@justdamilolo">Twitter</a>
         </li>
         <li>
-          <a href="#">Facebook</a>
+          <a href="https://facebook.com/">Facebook</a>
         </li>
       </ol>
     </div>

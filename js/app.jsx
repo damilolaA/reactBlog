@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return(
       <BrowserRouter>
         <div className="app">
           <Switch>
@@ -50,4 +50,4 @@ class App extends Component {
 
 const handle = document.getElementById('app');
 
-render(<App />, handle);
+render(<App/>, handle);
