@@ -6,28 +6,29 @@ import Landing from './Landing';
 import SinglePost from './SinglePost';
 
 class App extends Component {
-  
   constructor(props) {
-  	super(props)
+    super(props);
 
-  	this.state = {
-  		post: ""
-  	}
+    this.state = {
+      post: ''
+    };
   }
 
   componentDidMount() {
-  	axios.get('https://blogappapi.herokuapp.com/api/v1/posts')
-  	.then(response => {
-  		this.setState({post: response});
-  	}, err => {
-  		if(err) {
-  			return console.log(err);
-  		}
-  	})
+    axios.get('https://blogappapi.herokuapp.com/api/v1/posts').then(
+      response => {
+        this.setState({ post: response });
+      },
+      err => {
+        if (err) {
+          return console.log(err);
+        }
+      }
+    );
   }
 
   render() {
-    return(
+    return (
       <BrowserRouter>
         <div className="app">
           <Switch>
@@ -38,7 +39,7 @@ class App extends Component {
                 const { id } = props.match.params;
                 const post = this.state.post.data.find(info => info._id === id);
 
-                return <SinglePost {...post}/>
+                return <SinglePost {...post} />;
               }}
             />
           </Switch>
@@ -50,4 +51,4 @@ class App extends Component {
 
 const handle = document.getElementById('app');
 
-render(<App/>, handle);
+render(<App />, handle);

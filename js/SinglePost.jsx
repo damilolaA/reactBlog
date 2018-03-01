@@ -5,26 +5,26 @@ import Header from './Header';
 import Footer from './Footer';
 
 const SinglePost = props => {
-	return (
-		<div>
-			<Nav/>
-			<Header/>
-			<div className="container">
-				<div className="row">
-					<div className="col-sm-8 blog-main">
-					  <div className="blog-post">
-						  <h2 className="blog-post-title">{props.title}</h2>
-						  <p className="blog-post-meta">
-						    {props.date} by <a href="#">{props.author}</a>
-						  </p>
-						  <p>{props.post}</p>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<Footer/>
-		</div>
-	);
+  return (
+    <div>
+      <Nav />
+      <Header />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-8 blog-main">
+            <div className="blog-post">
+              <h2 className="blog-post-title">{props.title}</h2>
+              <p className="blog-post-meta">
+                {props.date} by <a href="#">{props.author}</a>
+              </p>
+              <p>{props.post}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 };
 
 export default SinglePost;

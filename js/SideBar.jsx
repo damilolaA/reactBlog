@@ -5,8 +5,8 @@ const SideBar = () => (
     <div className="sidebar-module sidebar-module-inset">
       <h4>About</h4>
       <p>
-        This blog is committed to posting relevant articles and information relating to programming,
-        web development, and the tech community in Nigeria.
+        This blog is committed to posting relevant articles and information relating to programming, web development,
+        and the tech community in Nigeria.
       </p>
     </div>
     <div className="sidebar-module">
