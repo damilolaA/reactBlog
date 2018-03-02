@@ -19,7 +19,14 @@ const SinglePost = props => {
               </p>
               <p>{props.post}</p>
             </div>
-            <input type="text" placeholder="comment"/>
+            <div>
+              <h3 className="header">Add your comment</h3>
+              <form className="comment">
+                <textarea className="text-field" placeholder="write something"></textarea>
+                <br/>
+                <button className="def-button post-comment">Upload comment</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

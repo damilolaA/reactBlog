@@ -149,6 +149,25 @@ h6, .h6 {
   color: #999;
 }
 
+/*
+ * Comment
+ */
+
+.add-comment .comment {
+  background-color: #eee;
+  width: 450px;
+  padding: 36px 24px;
+}
+.add-comment .text-field {
+  width: 400px;
+  height: 81px;
+  padding: 16px;
+}
+.add-comment .post-comment {
+  display: block;
+  background-color: #00a6fb;
+  margin-top: 24px;
+}
 
 /*
  * Footer
