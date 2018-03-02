@@ -19,6 +19,7 @@ const SinglePost = props => {
               </p>
               <p>{props.post}</p>
             </div>
+            <input type="text" placeholder="comment"/>
           </div>
         </div>
       </div>

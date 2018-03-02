@@ -29,13 +29,23 @@ class Landing extends Component {
   }
 
   render() {
+
+    let posts, gif;
+
+    if(this.state.posts) {
+      posts = this.state.posts;
+    } else {
+      gif = <img alt="" src="../public/pleasewait.gif"/>
+    }
+
     return (
       <div className="landing">
         <Nav />
         <Header />
         <div className="container">
           <div className="row">
-            <Posts data={this.state.posts} />
+            {gif}
+            <Posts data={posts} />
             <SideBar />
           </div>
         </div>
