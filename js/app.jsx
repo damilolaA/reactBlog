@@ -27,7 +27,20 @@ class App extends Component {
     );
   }
 
+  FourOFour() {
+   return (
+      <h3>Page Not Found</h3>
+    );
+  }
+
   render() {
+
+    let posts;
+
+    if(this.state.post) {
+      posts = this.state.post;
+    }
+
     return (
       <BrowserRouter>
         <div className="app">
@@ -37,11 +50,12 @@ class App extends Component {
               path="/post/:id"
               component={props => {
                 const { id } = props.match.params;
-                const post = this.state.post.data.find(info => info._id === id);
+                const post = posts.data.find(info => info._id === id);
 
                 return <SinglePost {...post} />;
               }}
             />
+            <Route component={this.FourOFour}/>
           </Switch>
         </div>
       </BrowserRouter>
