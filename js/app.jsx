@@ -28,16 +28,13 @@ class App extends Component {
   }
 
   FourOFour() {
-   return (
-      <h3>Page Not Found</h3>
-    );
+    return <h3>Page Not Found</h3>;
   }
 
   render() {
-
     let posts;
 
-    if(this.state.post) {
+    if (this.state.post) {
       posts = this.state.post;
     }
 
@@ -55,7 +52,7 @@ class App extends Component {
                 return <SinglePost {...post} />;
               }}
             />
-            <Route component={this.FourOFour}/>
+            <Route component={this.FourOFour} />
           </Switch>
         </div>
       </BrowserRouter>

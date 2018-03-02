@@ -22,8 +22,8 @@ const SinglePost = props => {
             <div>
               <h3 className="header">Add your comment</h3>
               <form className="comment">
-                <textarea className="text-field" placeholder="write something"></textarea>
-                <br/>
+                <textarea className="text-field" placeholder="write something" />
+                <br />
                 <button className="def-button post-comment">Upload comment</button>
               </form>
             </div>

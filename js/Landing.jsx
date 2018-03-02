@@ -29,13 +29,12 @@ class Landing extends Component {
   }
 
   render() {
-
     let posts, gif;
 
-    if(this.state.posts) {
+    if (this.state.posts) {
       posts = this.state.posts;
     } else {
-      gif = <img alt="" src="../public/pleasewait.gif"/>
+      gif = <img alt="" src="../public/pleasewait.gif" />;
     }
 
     return (
